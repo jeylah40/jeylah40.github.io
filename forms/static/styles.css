@@ -1,0 +1,28 @@
+body {
+  background-image:url(../images/makeAppt.jpg);
+  background-size: cover;
+  background-attachment:fixed;
+  background-color:#508ec7;
+}
+.container {
+  margin:auto;
+  width:80%;
+  background-color: #eeeeee;
+  padding:25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+img {border-radius:5px;}
+h2 {text-align: center}
+
+label{display: block;
+  padding-bottom:5px;
+  position:relative;}
+input{position:absolute; left:18%; width:75%}
+.submit {width:initial; position:initial }
+
+.secretLink {position:fixed; bottom:0; right:10px;font-size:2em;}
+a {text-decoration: none;}
+a:link {color:#508ec7}
+a:visited {color:#508ec7}

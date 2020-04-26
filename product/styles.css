@@ -1,0 +1,307 @@
+/* Jordan Bluehdorn
+   CIS 130 Sec 101
+   3/26/15
+*/
+
+/*==Box Model and CSS Resets==*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*==Body==*/
+html, body {
+	height: 100%;
+}
+
+body {
+	width: 1000px;
+	margin: auto;
+	background-image: url(images/small_steps.png);
+	background-attachment: fixed;
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+/*==Header==*/
+/*--General Header--*/
+header {
+	background-color: #FFF;
+	border-bottom: 2px solid #00F;
+	box-shadow: 3px 0 2px #777;
+	position: fixed;
+	height: 75px;
+	width: 1000px;
+	z-index: 100;
+}
+
+/*--Nav--*/
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+	width: 100%;
+	text-align: right;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	text-decoration: none;
+	color: #06F;
+	margin-left: -3px;
+	padding: 0 10px;
+	border-left: 1px solid #00F;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav li:first-child a {
+	border: none;
+}
+
+nav a:hover{
+	color: #3CF;
+}
+
+/*==Main==*/
+/*--General Main--*/
+main {
+	padding-top: 75px;
+	box-shadow: 3px 3px 2px #777;
+	background-color: rgba(255,255,255,0.85);
+}
+
+h1 {
+	text-align: center;	
+	padding: 15px;
+	background-color: #00F;
+	Color: #FFF;
+	font-size: 30px;
+}
+
+section {
+	margin: 0 25px;	
+}
+
+p {
+	padding: 10px;	
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+td, th {
+	padding: 3px;
+}
+
+table.form td:first-child {
+	text-align: right;	
+}
+
+tale.form td:last-child {
+	text-align: left;
+}
+
+input {
+	width: 100%;	
+}
+
+.radio {
+	width: inherit;
+	margin: 0 2px 0 10px;
+}
+
+/*--Admission Date Table--*/
+table.admissionDate {
+	color: white;	
+}
+
+table.admissionDate td, table.admissionDate th {
+	border: 1px solid black;
+	padding: 8px;	
+	width: 50%;
+	box-shadow: 3px 3px 8px rgba(250,250,250,0.5) inset;
+}
+
+table.admissionDate th {
+	background-color: #36C;	
+}
+
+table.admissionDate td {
+	background-color: #69F;
+}
+
+/*--Articles--*/
+article {
+	padding: 10px;
+	border-bottom: 2px solid #00F;
+	box-shadow: 2px 0 5px rgba(100,100,100,0.4) inset;
+	-mox-box-shadow: 2px 0 5px rgba(100,100,100,0.4) inset;
+	-webkit-box-shadow: 2px 0 5px rgba(100,100,100,0.4) inset;
+}
+
+article h2 {
+	font-weight: 700;
+}
+
+article small {
+	color: #666;
+	font-size: 10px;
+}
+
+article:after { /*Clearfix*/
+	content:"";
+	display:table;
+	clear:both;
+}
+
+article img {
+	border: 2px solid #00F;
+	border-radius: 15px;
+	margin: 5px;
+}
+
+article p::first-letter {	
+	font-size: 60px;
+	line-height: 45px;
+	color: #00F;
+	font-family: Georgia;
+	float: left;
+	padding-right: 4px;
+}
+
+/*==Footer==*/
+footer {
+	width: 1000px;
+	box-shadow: 3px 3px 2px #777;
+	background-color: rgba(255,255,255,0.85);
+	border-top: 2px solid #00F;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+footer nav {
+	vertical-align: middle;	
+}
+
+footer ul {
+	text-align: center;	
+	vertical-align: middle;
+}
+
+footer a {
+	vertical-align: middle;
+}
+	
+footer:after {	/*Clearfix*/
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/*==Misc Classes==*/
+.floatLeft {
+	float: left;
+} 
+
+.floatRight {
+	float: right;		
+}
+
+.dropCaps {
+	font-size: 60px;
+	line-height: 45px;
+	color: #00F;
+	font-family: Georgia;
+	float: left;
+	padding-right: 4px;
+}
+
+.clearFix:after{
+	/*Clearfix*/
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.contactInfo {
+	text-align: center;
+	margin-top: 5px;	
+}
+
+.address {
+	text-align: left;
+	position: relative;
+	left: 50px;	
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+/*--SEO Friendly Table--*/
+
+.table {
+	display: table;	
+	border: 1px solid black;
+	width: 60%;
+	background-color: #36C;
+	color: #FFF;
+}
+
+.tableRow {
+	display: table-row;	
+}
+
+.tableRow:nth-child(even) {
+	background-color: #69F;	
+}
+
+.tableHeader, .tableCell {
+	display: table-cell;	
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+	min-width: 100px;
+	box-shadow: 5px 5px 13px rgba(200,200,200,0.45) inset;
+	/*background-image: linear-gradient(to bottom, rgba(250,250,250,.25), rgba(0,0,0,0));*/
+}
+
+.tableHeader {
+	font-weight: 700;
+	font-size: 15px;	
+}
+
+/*--Fancy Line--*/
+.fancy {
+  line-height: 0.3;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-top: 1px solid white;
+  top: 5px;
+  width: 300px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}

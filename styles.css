@@ -1,0 +1,96 @@
+/* <!--Kirsten Markley
+		CIS 130
+		index.html
+
+			Style sheet
+--> */
+
+.container{width: 900px; margin: 0 auto;font-family: 'Josefin Slab', serif;}
+p{font-size: 20px;}
+
+/* social media */
+#socialmedia {
+	text-align: right;
+}
+.fab {
+	padding-right: 5px;
+}
+
+/* ***** HEADING WITH NAME ***** */
+.name{
+	color: #404040;
+	font-size: 85px;
+	font-family: 'Cabin Sketch', cursive;
+	border-bottom: 2px solid black;
+	padding-bottom: 20px;
+	}
+
+header{text-align: center; font-size: 30px;}
+header p{margin: 10px;}
+
+
+/* ***** NAVIGATION ***** */
+nav{width:100%; padding: 20px; margin-top: 50px; margin: auto;text-align: center;
+}
+
+nav a{
+	font-size: 20px;
+	background-color: #404040;
+	text-decoration:none;
+	padding: 20px;
+	color: #fff9cc;
+	margin-right: 15px;
+
+}
+nav li{display: inline-block; }
+a:hover{
+	transition-duration: .35s;
+	box-shadow: 10px 10px 5px black;
+	font-weight: bold;
+	}
+
+
+
+.heading{text-align: center; margin-top: 75px; font-size: 25px;}
+
+/* ***** FOOTER ***** */
+footer p{
+	text-align: center;
+ 	width: 900px;
+	margin: auto;
+	font-family: 'Josefin Slab', serif;
+	}
+footer{
+	clear:both;
+	padding: 15px;
+	border-top: 2px solid black;
+	margin-top: 500px;
+}
+
+
+
+
+/* ***** index.html ***** */
+article p{
+	text-align: center;
+	margin-right: 60px;
+	float: right;
+	width: 400px;
+	font-size: 20px;
+
+}
+#headshot{
+	float: left;
+	width: 300px;
+	border: 5px solid #404040;
+	margin-left: 60px;
+	box-shadow: 5px 5px 10px black;
+}
+.greeting{
+	color: #404040;
+	font-size: 50px;
+	font-family: 'Cabin Sketch', cursive;
+	margin-bottom: 0px;
+	padding-top: 35px;
+}
+.homepageArticle{margin-top: 50px; }

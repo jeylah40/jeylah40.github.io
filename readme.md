@@ -1,2 +1,2 @@
-# My Online Profile
+# Public Profile
 ## Kirsten Markley
